@@ -7,6 +7,7 @@ import NavBar from "../components/NavBar";
 import ColoredRect1 from "../assets/images/colored-rect-1.png";
 import Vector1 from "../assets/images/vector-1.png";
 import styles from "../styles/Home.module.css";
+import CustomButton from "../components/CustomButton";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +30,18 @@ const Home: NextPage = () => {
           <Typography sx={{ marginTop: 8 }}>
             Engineers united in novel ways to turn your Vision into Reality.
           </Typography>
+          <Grid container width={"80%"} paddingTop="5rem">
+            <Grid xs={6}>
+              <CustomButton title="Get a Quote" type="filled" arrow={true} />
+            </Grid>
+            <Grid xs={6}>
+              <CustomButton
+                title="See Portfolio"
+                type="outlined"
+                arrow={true}
+              />
+            </Grid>
+          </Grid>
         </Grid>
         <Grid xs={6}>
           <Box className={styles.vector1}>
