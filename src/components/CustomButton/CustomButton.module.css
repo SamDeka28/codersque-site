@@ -1,0 +1,10 @@
+.filledButton {
+  color: white;
+  padding: 0.7rem 3rem;
+  border-radius: 100rem;
+}
+
+.outlinedButton {
+  padding: 0.7rem 3rem;
+  border-radius: 100rem;
+}
