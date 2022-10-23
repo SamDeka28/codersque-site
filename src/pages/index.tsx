@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
@@ -8,6 +8,9 @@ import ColoredRect1 from "../assets/images/colored-rect-1.png";
 import Vector1 from "../assets/images/vector-1.png";
 import styles from "../styles/Home.module.css";
 import CustomButton from "../components/CustomButton";
+import SectionTitle from "../components/SectionTitle";
+import { services } from "../Utils/data";
+import ServiceCard from "../components/ServiceCard";
 
 const Home: NextPage = () => {
   return (
@@ -31,7 +34,7 @@ const Home: NextPage = () => {
             Engineers united in novel ways to turn your Vision into Reality.
           </Typography>
           <Grid container width={"80%"} paddingTop="5rem">
-            <Grid xs={6}>
+            <Grid xs={6} sx={{ paddingLeft: 0 }}>
               <CustomButton title="Get a Quote" type="filled" arrow={true} />
             </Grid>
             <Grid xs={6}>
@@ -49,6 +52,25 @@ const Home: NextPage = () => {
           </Box>
         </Grid>
       </Grid>
+      <Box className={styles.sectionContainer}>
+        <SectionTitle title="Our Services" />
+
+        <Grid container>
+          {services.map((service) => {
+            return (
+              <Grid xs={4}>
+                <ServiceCard service={service} />
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Box>
+      <Box className={styles.sectionContainer}>
+        <SectionTitle title="Technologies" />
+      </Box>
+      <Box className={styles.sectionContainer}>
+        <SectionTitle title="Industries" />
+      </Box>
     </Box>
   );
 };
