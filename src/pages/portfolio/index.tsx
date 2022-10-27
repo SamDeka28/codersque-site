@@ -53,7 +53,7 @@ const Home: NextPage = () => {
         >
           <Grid item xs={12} md={6} xl={6}>
             {key % 2 !== 0 ? (
-              <Box className={styles.backgroundDes}>
+              <Box className={styles.backgroundDesRev}>
                 <Image
                   src={item.image}
                   width="700px"

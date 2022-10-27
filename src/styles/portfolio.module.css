@@ -50,6 +50,11 @@
     /* background-size: 100% 100%; */
     padding:6em 2em !important
 }
+.backgroundDesRev {
+    background-image: url('../assets/images/reverseBack.svg');
+    background-size: cover;
+    padding:6em 2em !important
+}
 .backgroundImg {
     /* width: 10em !important;
     height: 10em !important; */
@@ -75,6 +80,7 @@
     justify-content: center;
     align-items: center;
     padding: 4em 2em;
+    margin-bottom: 10em;
 }
 .buttonDesLoad {
     color:#F72585;
