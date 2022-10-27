@@ -8,6 +8,8 @@ const MyCard = styled(Paper)(
     width: 70%;
     padding: 2rem;
     border-radius: 20px;
+    position: relative;
+    z-index: 20;
   `
 );
 

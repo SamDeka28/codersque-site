@@ -1,18 +1,44 @@
 .container {
-  padding-left: 5vw;
+  /* padding-left: 5vw; */
   overflow-x: hidden;
+  position: relative;
 }
 
 .coloredRect1 {
   width: 60%;
   right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.coloredRect2 {
+  width: 100%;
+  top: -120px;
   position: absolute;
 }
 
 .vector1 {
-  width: 65%;
+  width: 90%;
 }
 
 .sectionContainer {
-  margin-top: 5vw;
+  position: relative;
+}
+
+.titleBack1 {
+  font-size: 17rem;
+  font-weight: bolder;
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  color: #f2f2f2;
+}
+
+.titleBack2 {
+  font-size: 12rem;
+  font-weight: bolder;
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  color: #fafafa;
 }

@@ -1,16 +1,20 @@
+import styles from "../styles/Home.module.css";
 import { Box, Paper, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
 
-import NavBar from "../components/NavBar";
-import ColoredRect1 from "../assets/images/colored-rect-1.png";
-import Vector1 from "../assets/images/vector-1.png";
-import styles from "../styles/Home.module.css";
 import CustomButton from "../components/CustomButton";
 import SectionTitle from "../components/SectionTitle";
-import { services } from "../Utils/data";
+import NavBar from "../components/NavBar";
 import ServiceCard from "../components/ServiceCard";
+
+import ColoredRect1 from "../assets/images/backdrop.svg";
+import Vector1 from "../assets/images/girl-illustration.svg";
+import slide from "../assets/images/slide.svg";
+
+import { services } from "../Utils/data";
+import TechnologyCard from "../components/TechnologyCard";
 
 const Home: NextPage = () => {
   return (
@@ -19,8 +23,9 @@ const Home: NextPage = () => {
       <Box className={styles.coloredRect1}>
         <Image src={ColoredRect1} />
       </Box>
-      <Grid container spacing={2} paddingTop="18vw">
-        <Grid xs={6}>
+
+      <Grid container spacing={2} padding="5vw">
+        <Grid xs={6} paddingTop="10vw">
           <Typography variant="h4" color="primary">
             We help you
           </Typography>
@@ -46,19 +51,20 @@ const Home: NextPage = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid xs={6}>
+        <Grid xs={6} sx={{ display: "flex", justifyContent: "center" }}>
           <Box className={styles.vector1}>
             <Image src={Vector1} />
           </Box>
         </Grid>
       </Grid>
-      <Box className={styles.sectionContainer}>
+      <Box className={styles.sectionContainer} padding="5vw">
+        <Typography className={styles.titleBack1}>Services</Typography>
         <SectionTitle title="Our Services" />
 
         <Grid container>
-          {services.map((service) => {
+          {services.map((service, index) => {
             return (
-              <Grid xs={4}>
+              <Grid key={index} xs={4}>
                 <ServiceCard service={service} />
               </Grid>
             );
@@ -66,9 +72,25 @@ const Home: NextPage = () => {
         </Grid>
       </Box>
       <Box className={styles.sectionContainer}>
-        <SectionTitle title="Technologies" />
+        <Box className={styles.coloredRect2}>
+          <Image src={slide} />
+        </Box>
+        <Box padding="5vw">
+          <Typography className={styles.titleBack2}>Technologies</Typography>
+          <SectionTitle title="Technologies" />
+
+          <Grid container>
+            {services.map((service, index) => {
+              return (
+                <Grid key={index} xs={2} spacing={2}>
+                  <TechnologyCard technology={service} />
+                </Grid>
+              );
+            })}
+          </Grid>
+        </Box>
       </Box>
-      <Box className={styles.sectionContainer}>
+      <Box className={styles.sectionContainer} padding="5vw">
         <SectionTitle title="Industries" />
       </Box>
     </Box>
