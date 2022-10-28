@@ -1,6 +1,4 @@
 import "../styles/globals.css";
-import "../styles/home.module.css";
-import "../styles/portfolio.module.css";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../theme";

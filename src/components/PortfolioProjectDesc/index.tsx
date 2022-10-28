@@ -1,6 +1,6 @@
 import * as React from "react";
-import {Box ,Typography,Button} from "@mui/material";
-import styles from "../../styles/portfolio.module.css";
+import { Box, Typography, Button } from "@mui/material";
+import styles from "./portfolio.module.css";
 
 interface IProps {
   type: string;
@@ -8,7 +8,7 @@ interface IProps {
   project: string;
   content: string;
   button_text: string;
-  alignText:boolean
+  alignText: boolean;
   // image?: HTMLImageElement
 }
 
@@ -18,10 +18,10 @@ const ProjectDesc: React.FC<IProps> = ({
   project,
   content,
   button_text,
-  alignText
+  alignText,
 }) => {
   return (
-    <Box className={ alignText ?styles.textBox :styles.textBox2}>
+    <Box className={alignText ? styles.textBox : styles.textBox2}>
       <Typography variant="h6" className={styles.industry}>
         <b>{type} :</b> {name}
       </Typography>

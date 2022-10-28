@@ -1,4 +1,4 @@
-import styles from "../styles/home.module.css";
+import styles from "./home.module.css";
 import { Box, Paper, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Grid from "@mui/material/Unstable_Grid2";
