@@ -37,9 +37,9 @@ const ServiceCard: React.FC<IProps> = ({ service }) => {
         Technologies/Tools :
       </Typography>
       <Stack direction="row" spacing={2}>
-        {service.tools.map((tool: any) => {
+        {service.tools.map((tool: any, index: number) => {
           return (
-            <Box>
+            <Box key={`tool-${index}`}>
               <Image src={tool} />
             </Box>
           );

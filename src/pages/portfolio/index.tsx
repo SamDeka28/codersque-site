@@ -50,6 +50,7 @@ const Home: NextPage = () => {
           xl={12}
           className={styles.portfolioDetails}
           spacing={3}
+          key={`item-${key}`}
         >
           <Grid item xs={12} md={6} xl={6}>
             {key % 2 !== 0 ? (
