@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../styles/home.module.css";
 import { Box, Paper, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -59,19 +59,7 @@ const Home: NextPage = () => {
         </Grid>
       </Grid>
       <Box className={styles.sectionContainer} padding="5vw">
-        <Typography
-          className={styles.titleBack1}
-          sx={{
-            fontSize: "17rem",
-            fontWeight: "bolder",
-            position: "absolute",
-            top: "-50px",
-            left: "100px",
-            color: "#f2f2f2",
-          }}
-        >
-          Services
-        </Typography>
+        <Typography className={styles.titleBack1}>Services</Typography>
         <SectionTitle title="Our Services" />
 
         <Grid container>
