@@ -12,7 +12,7 @@ import { Stack } from "@mui/material";
 
 export default function NavBar() {
   return (
-    <Box>
+    <Box sx={{ position: "relative" }}>
       <AppBar position="absolute" color="transparent" elevation={0}>
         <Toolbar className={styles.navbar}>
           <Box width={120}>
