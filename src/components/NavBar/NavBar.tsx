@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Image from "next/image";
-import logo from "../../assets/images/logo-name.png";
+import logo from "../../assets/images/logo.svg";
 import styles from "./NavBar.module.css";
 import Link from "next/link";
 import { Stack } from "@mui/material";
@@ -34,7 +34,7 @@ export default function NavBar() {
                 Home
               </Typography>
             </Link>
-            <Link href="/">
+            {/* <Link href="/">
               <Typography
                 className={
                   router.pathname == "/services"
@@ -44,7 +44,7 @@ export default function NavBar() {
               >
                 Services
               </Typography>
-            </Link>
+            </Link> */}
             <Link href="/">
               <Typography
                 className={
