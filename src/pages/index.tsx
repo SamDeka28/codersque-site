@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
       <Grid container spacing={2} padding="5vw">
         <Grid xs={6} paddingTop="10vw">
-          <Typography variant="h4" color="primary">
+          <Typography variant="h4" color="primary" sx={{ fontWeight: "bold" }}>
             We help you
           </Typography>
           <Typography variant="h2" color="primary">
