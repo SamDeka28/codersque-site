@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
       <Grid container spacing={2} padding="5vw">
         <Grid xs={6} paddingTop="10vw">
-          <Typography variant="h4" color="primary" sx={{ fontWeight: "bold" }}>
+          <Typography variant="h4" color="primary">
             We help you
           </Typography>
           <Typography variant="h2" color="primary">
@@ -59,7 +59,19 @@ const Home: NextPage = () => {
         </Grid>
       </Grid>
       <Box className={styles.sectionContainer} padding="5vw">
-        <Typography className={styles.titleBack1}>Services</Typography>
+        <Typography
+          className={styles.titleBack1}
+          sx={{
+            fontSize: "17rem",
+            fontWeight: "bolder",
+            position: "absolute",
+            top: "-50px",
+            left: "100px",
+            color: "#f2f2f2",
+          }}
+        >
+          Services
+        </Typography>
         <SectionTitle title="Our Services" />
 
         <Grid container>
