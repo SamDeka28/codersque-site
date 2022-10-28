@@ -1,10 +1,8 @@
-import { Grid } from "@mui/material";
-import { Box, Typography, Button } from "@mui/material";
+import { Grid, Box, Typography, Button } from "@mui/material";
 import NavBar from "../../components/NavBar";
 import type { NextPage } from "next";
-import styles from "./portfolio.module.css";
-import { FIRST_TAGLINE } from "../../Utils/portfolioContent";
-import { CONTENT_DETAILS } from "../../Utils/portfolioContent";
+import styles from "../../styles/portfolio.module.css";
+import { FIRST_TAGLINE, CONTENT_DETAILS } from "../../Utils/portfolioContent";
 import Image from "next/image";
 import ProjectDesc from "../../components/PortfolioProjectDesc";
 

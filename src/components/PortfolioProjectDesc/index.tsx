@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box, Typography, Button } from "@mui/material";
-import styles from "./portfolio.module.css";
+import styles from "../../styles/portfolio.module.css";
 
 interface IProps {
   type: string;
