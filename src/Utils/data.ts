@@ -14,6 +14,13 @@ import mongo from "../assets/images/mongo.svg";
 import nginx from "../assets/images/nginx.svg";
 import angular from "../assets/images/angular.svg";
 
+import ionicIcon from "../assets/images/ionic-icon.svg";
+import nodeIcon from "../assets/images/node-icon.svg";
+import mongoIcon from "../assets/images/mongo-icon.svg";
+import nginxIcon from "../assets/images/nginx-icon.svg";
+import tsIcon from "../assets/images/typescript-icon.svg";
+import reactIcon from "../assets/images/react-icon.svg";
+
 export const services = [
   {
     name: "Mobile App Development",
@@ -32,5 +39,32 @@ export const services = [
     desc: "We gather requirements, brain-storm ideas, design and build your product like its our own.",
     icon: web,
     tools: [node, mongo, nginx, angular],
+  },
+];
+
+export const technologies = [
+  {
+    name: "Ionic",
+    icon: ionicIcon,
+  },
+  {
+    name: "NodeJs",
+    icon: nodeIcon,
+  },
+  {
+    name: "MongoDB",
+    icon: mongoIcon,
+  },
+  {
+    name: "Nginx",
+    icon: nginxIcon,
+  },
+  {
+    name: "TypeScript",
+    icon: tsIcon,
+  },
+  {
+    name: "ReactJs",
+    icon: reactIcon,
   },
 ];

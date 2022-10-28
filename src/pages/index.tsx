@@ -13,7 +13,7 @@ import ColoredRect1 from "../assets/images/backdrop.svg";
 import Vector1 from "../assets/images/girl-illustration.svg";
 import slide from "../assets/images/slide.svg";
 
-import { services } from "../Utils/data";
+import { services, technologies } from "../Utils/data";
 import TechnologyCard from "../components/TechnologyCard";
 
 const Home: NextPage = () => {
@@ -80,13 +80,18 @@ const Home: NextPage = () => {
           <SectionTitle title="Technologies" />
 
           <Grid container>
-            {services.map((service, index) => {
+            {technologies.map((service, index) => {
               return (
                 <Grid key={index} xs={2} spacing={2}>
                   <TechnologyCard technology={service} />
                 </Grid>
               );
             })}
+          </Grid>
+          <Grid container>
+            <Grid xs={2} sx={{ marginTop: 10 }}>
+              <CustomButton title="Find out more" type="filled" arrow={true} />
+            </Grid>
           </Grid>
         </Box>
       </Box>
