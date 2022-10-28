@@ -65,7 +65,7 @@ const Home: NextPage = () => {
         <Grid container>
           {services.map((service, index) => {
             return (
-              <Grid key={index} xs={4}>
+              <Grid key={`service-${index}`} xs={4}>
                 <ServiceCard service={service} />
               </Grid>
             );
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
           <Grid container>
             {technologies.map((technology, index) => {
               return (
-                <Grid key={index} xs={2} spacing={2}>
+                <Grid key={`tech-${index}`} xs={2} spacing={2}>
                   <TechnologyCard technology={technology} />
                 </Grid>
               );
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
         <Grid container sx={{ width: "100%" }}>
           {industries.map((industry, index) => {
             return (
-              <Grid key={index} xs={3} spacing={2}>
+              <Grid key={`ind-${index}`} xs={3} spacing={2}>
                 <IndustryCard industry={industry} />
               </Grid>
             );
