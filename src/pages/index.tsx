@@ -13,8 +13,9 @@ import ColoredRect1 from "../assets/images/backdrop.svg";
 import Vector1 from "../assets/images/girl-illustration.svg";
 import slide from "../assets/images/slide.svg";
 
-import { services, technologies } from "../Utils/data";
+import { industries, services, technologies } from "../Utils/data";
 import TechnologyCard from "../components/TechnologyCard";
+import IndustryCard from "../components/IndustryCard";
 
 const Home: NextPage = () => {
   return (
@@ -75,28 +76,40 @@ const Home: NextPage = () => {
         <Box className={styles.coloredRect2}>
           <Image src={slide} />
         </Box>
-        <Box padding="5vw">
+        <Box padding="5vw" paddingTop="10vw">
           <Typography className={styles.titleBack2}>Technologies</Typography>
           <SectionTitle title="Technologies" />
 
           <Grid container>
-            {technologies.map((service, index) => {
+            {technologies.map((technology, index) => {
               return (
                 <Grid key={index} xs={2} spacing={2}>
-                  <TechnologyCard technology={service} />
+                  <TechnologyCard technology={technology} />
                 </Grid>
               );
             })}
           </Grid>
           <Grid container>
-            <Grid xs={2} sx={{ marginTop: 10 }}>
+            <Grid xs={2} sx={{ marginTop: 15 }}>
               <CustomButton title="Find out more" type="filled" arrow={true} />
             </Grid>
           </Grid>
         </Box>
       </Box>
-      <Box className={styles.sectionContainer} padding="5vw">
+      <Box className={styles.sectionContainer} padding="5vw" paddingTop="10vw">
+        <Typography className={styles.titleBack3}>Industries</Typography>
+
         <SectionTitle title="Industries" />
+
+        <Grid container sx={{ width: "100%" }}>
+          {industries.map((industry, index) => {
+            return (
+              <Grid key={index} xs={3} spacing={2}>
+                <IndustryCard industry={industry} />
+              </Grid>
+            );
+          })}
+        </Grid>
       </Box>
     </Box>
   );

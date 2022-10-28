@@ -21,6 +21,11 @@ import nginxIcon from "../assets/images/nginx-icon.svg";
 import tsIcon from "../assets/images/typescript-icon.svg";
 import reactIcon from "../assets/images/react-icon.svg";
 
+import ecommerce from "../assets/images/ecommerce.svg";
+import edtech from "../assets/images/edtech.svg";
+import fintech from "../assets/images/fintech.svg";
+import healthcare from "../assets/images/healthcare.svg";
+
 export const services = [
   {
     name: "Mobile App Development",
@@ -66,5 +71,24 @@ export const technologies = [
   {
     name: "ReactJs",
     icon: reactIcon,
+  },
+];
+
+export const industries = [
+  {
+    name: "HealthCare",
+    icon: healthcare,
+  },
+  {
+    name: "E-commerce",
+    icon: ecommerce,
+  },
+  {
+    name: "FinTech",
+    icon: fintech,
+  },
+  {
+    name: "EdTech",
+    icon: edtech,
   },
 ];

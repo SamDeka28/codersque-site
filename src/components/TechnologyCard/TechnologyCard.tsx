@@ -42,9 +42,7 @@ const TechnologyCard: React.FC<IProps> = ({ technology }) => {
             src={technology.icon}
           />
         </Box>
-        <Typography
-          sx={{ fontWeight: "bold", fontSize: "1.3rem", margin: "10px 0" }}
-        >
+        <Typography sx={{ fontSize: "20px", margin: "10px 0" }}>
           {technology.name}
         </Typography>
       </Box>
