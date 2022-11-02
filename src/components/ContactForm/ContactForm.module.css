@@ -1,0 +1,58 @@
+.input {
+  border-width: 0px;
+  width: 90%;
+  height: 90%;
+}
+
+.textarea {
+  border-width: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.inputContainer {
+  height: 3em;
+  background: #ffffff;
+  box-shadow: 0px 0px 59px 5px rgba(213, 213, 213, 0.764);
+  border-radius: 32px;
+  border-width: 0px;
+  margin-bottom: 1px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countryCode {
+  /* height: 3em; */
+  background: #ffffff;
+  box-shadow: 0px 0px 59px 5px rgba(213, 213, 213, 0.764);
+  border-radius: 32px;
+  border-width: 0px;
+  margin-bottom: 1px;
+  width: 40%;
+  margin-right: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.textAreaContainer {
+  height: 8em;
+  background: #ffffff;
+  box-shadow: 0px 0px 59px 5px rgba(213, 213, 213, 0.764);
+  border-radius: 15px;
+  border-width: 0px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
