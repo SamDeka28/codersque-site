@@ -102,6 +102,7 @@ const Home: NextPage = () => {
                 content={item.content}
                 button_text={item.button_text}
                 alignText={false}
+                image= {item.image}
               />
             )}
           </Grid>
