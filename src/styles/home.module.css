@@ -44,8 +44,16 @@
 }
 
 .heroTag {
-  padding-top: 8em;
+  padding-top: 10em;
   background: linear-gradient(77.44deg, #B409B7 20.54%, #6F0BAC 60.59%, #3A0CA3 91.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.subTag {
+  background: linear-gradient(135deg, #F761A1 0%, #8C1BAB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -57,6 +65,48 @@
   font-weight: bold;
 }
 .heroleft .heroTag span {
+  display: block;
+}
+
+.ideas {
+  height: 110vh;
+  display:  flex;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-content: space-evenly;
+}
+
+.ideasLeft { 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0px 5vw;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ideasAction {
+  margin-top: 62px;
+}
+
+.ideasHeading {
+  font-size : 96px;
+  font-weight: bold;
+  color :#2D1A59;
+}
+
+.ideasSubheading{
+  /* font-size: 3rem; */
+  font-weight: 400;
+font-size: 32px;
+color :#4D4D4D;
+margin-bottom: 64px;
+}
+
+.ideasTag {
+  /* padding-top: 10em; */
+}
+
+.ideasLeft .ideasTag > span {
   display: block;
 }
 

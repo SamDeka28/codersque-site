@@ -21,8 +21,8 @@ const MyCard = styled(Paper)(
     z-index: 1;
     ${theme.breakpoints.down("md")}{
       padding : 2vw;
-      border-radius : 0px;
-      box-shadow : 0px 4px 15px 30px rgba(204,204,204,.25);
+      border-radius : 8px;
+      box-shadow : 0px 4px 50px 20px rgba(204,204,204,.25);
     }
   `
 );
@@ -59,6 +59,7 @@ const IndustryCard: React.FC<IProps> = ({ industry }) => {
           fontSize: "20px",
           margin: "20px 0",
           textAlign: "center",
+          fontFamily: 'Josefin Sans'
         }}
       >
         {industry.name}

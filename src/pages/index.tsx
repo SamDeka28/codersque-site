@@ -54,7 +54,7 @@ const Home: NextPage = () => {
       {/*Technologies Section*/}
       <div className={styles.technologies}>
         <SectionTitle title="Technologies" type={"primary"} />
-        <Grid container justifyContent={"space-evenly"} sx={{ mt: "114px" }} rowGap={"1em"} spacing={8}>
+        <Grid container justifyContent={"space-evenly"} sx={{ mt: "114px" }} rowGap={"1.5em"} spacing={8}>
           {technologies.map((item, i) => <div><TechnologyCard technology={item} key={i} /></div>)}
         </Grid>
         <div style={{ marginTop: "114px" }}>
@@ -67,6 +67,45 @@ const Home: NextPage = () => {
         <Grid container justifyContent={"space-evenly"} className={styles.servicescontainer}>
           {industries.map((item, i) => <div className={styles.industrycards}><IndustryCard industry={item} key={i} /></div>)}
         </Grid>
+      </div>
+       {/*Call Section*/}
+       <div className={styles.ideas}>
+        <div className={styles.ideasLeft}>
+          <div style={{display:"flex",flexDirection : "column",justifyContent:"center"}}>
+            <p className={styles.ideasTag}><span className={styles.ideasSubheading}>Do you have a <span style={{color:"#3A0CA3",fontWeight:'700',borderBottom : "solid 8px #F72585"}}>Product Idea?</span></span>
+              <span className={styles.ideasHeading}>Lets bring your</span>
+              <span className={styles.ideasHeading}><span style={{color :"#F72585"}}>ideas</span> to life</span>
+              <span className={styles.ideasHeading}>together</span>
+            </p>
+            <div className={styles.ideasAction}>
+              <CustomButton type={"filled"} title={"Book a call"} arrow />
+            </div>
+          </div>
+        </div>
+        <div style={{height : '100vh',position:"relative"}}>
+          <div style={{position : "absolute",height : "100%", width: "100%",top: 0,background:"#26076C",transform: "rotate(-7.44deg)",right: "-10%",borderRadius : "90px"}}></div>
+          <Image src={flow}/>
+        </div>
+      </div>
+       {/*contact Section*/}
+       <div className={styles.ideas}>
+       <div style={{height : '100vh',position:"relative"}}>
+          <div style={{position : "absolute",height : "100%", width: "100%",top: 0,background:"#26076C",transform: "rotate(-7.44deg);",left: "-10%",borderRadius : "90px"}}></div>
+          <Image src={flow}/>
+        </div>
+        <div className={styles.ideasLeft}>
+          <div style={{display:"flex",flexDirection : "column",justifyContent:"center"}}>
+            <p className={styles.ideasTag}><span className={styles.ideasSubheading}>Do you have a <span style={{color:"#3A0CA3",fontWeight:'700',borderBottom : "solid 8px #F72585"}}>Product Idea?</span></span>
+              <span className={styles.ideasHeading}>Lets bring your</span>
+              <span className={styles.ideasHeading}><span style={{color :"#F72585"}}>ideas</span> to life</span>
+              <span className={styles.ideasHeading}>together</span>
+            </p>
+            <div className={styles.ideasAction}>
+              <CustomButton type={"filled"} title={"Book a call"} arrow />
+            </div>
+          </div>
+        </div>
+      
       </div>
       {/* <Box className={styles.footer}></Box> */}
     </Box>

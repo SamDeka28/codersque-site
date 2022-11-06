@@ -27,7 +27,7 @@ const ServiceCard: React.FC<IProps> = ({ service }) => {
         <Image src={service.icon} />
       </Box>
       <Typography
-        sx={{ fontWeight: "bold", fontSize: "1.3rem", margin: "10px 0" }}
+        sx={{ fontWeight: "bold", fontSize: "1.3rem", margin: "10px 0",fontFamily: 'Josefin Sans'}}
       >
         {service.name}
       </Typography>
@@ -35,7 +35,7 @@ const ServiceCard: React.FC<IProps> = ({ service }) => {
         {service.desc}
       </Typography>
       <Typography
-        sx={{ fontWeight: "bold", fontSize: "1.1rem", margin: "20px 0" }}
+        sx={{ fontWeight: "bold", fontSize: "1.1rem", margin: "20px 0",fontFamily: 'Josefin Sans' }}
       >
         Technologies/Tools :
       </Typography>
