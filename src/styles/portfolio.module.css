@@ -106,7 +106,9 @@
 .mobileDes {
 display: none;
 }
-
+.backgroundMobCheck  {
+    display: none;
+}
 /* ===========MEDIA QUERIES========== */
 @media screen and (max-width: 992px) {
   .textBox {
@@ -125,6 +127,9 @@ display: none;
   .mobileDes {
     display: block;
     margin:1em 0em;
+    }
+    .backgroundMobCheck  {
+        display: block;
     }
 }
 
