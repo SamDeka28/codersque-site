@@ -7,13 +7,13 @@ import { FIRST_TAGLINE } from "../../Utils/portfolioContent";
 import { CONTENT_DETAILS } from "../../Utils/portfolioContent";
 import Image from "next/image";
 import ProjectDesc from "../../components/PortfolioProjectDesc";
+import TopBarMobile from "../../components/MobileNav";
+import NavToggler from "../../components/NavToggle";
 import { useEffect, useState } from "react";
 
-const Home: NextPage = () => {
+const Portfolio: NextPage = () => {
   let size = 0
   const [ screenSize , setScreenSize] = useState(0)
-
-  console.log("size",size)
   useEffect(()=>{
     if (typeof window !== 'undefined') {
       size =  window.innerWidth
@@ -22,8 +22,8 @@ const Home: NextPage = () => {
   },[])
   return (
     <Grid container item xs={12} className={styles.container}>
-      <Grid item xs={12} style={{color:"white"}}>
-        <NavBar />
+      <Grid item xs={12}>
+       {<NavToggler/>}
       </Grid>
       <Grid
         item
@@ -130,4 +130,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Portfolio;

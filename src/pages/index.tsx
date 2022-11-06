@@ -18,11 +18,13 @@ import { industries, services, technologies } from "../Utils/data";
 import TechnologyCard from "../components/TechnologyCard";
 import IndustryCard from "../components/IndustryCard";
 import ContactForm from "../components/ContactForm";
+import NavToggler from "../components/NavToggle";
+
 
 const Home: NextPage = () => {
   return (
     <Box className={styles.container}>
-      <NavBar />
+      <NavToggler/>
       <Box className={styles.coloredRect1}>
         <Image src={ColoredRect1} />
       </Box>
