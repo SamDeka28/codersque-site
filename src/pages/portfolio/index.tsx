@@ -1,23 +1,36 @@
-import { Grid, Box, Typography, Button } from "@mui/material";
+import { Grid } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import NavBar from "../../components/NavBar";
 import type { NextPage } from "next";
 import styles from "../../styles/portfolio.module.css";
-import { FIRST_TAGLINE, CONTENT_DETAILS } from "../../Utils/portfolioContent";
+import { FIRST_TAGLINE } from "../../Utils/portfolioContent";
+import { CONTENT_DETAILS } from "../../Utils/portfolioContent";
 import Image from "next/image";
 import ProjectDesc from "../../components/PortfolioProjectDesc";
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+  let size = 0
+  const [ screenSize , setScreenSize] = useState(0)
+
+  console.log("size",size)
+  useEffect(()=>{
+    if (typeof window !== 'undefined') {
+      size =  window.innerWidth
+      setScreenSize(window.innerWidth)
+    }
+  },[])
   return (
     <Grid container item xs={12} className={styles.container}>
-      <Grid item xs={12}>
+      <Grid item xs={12} style={{color:"white"}}>
         <NavBar />
       </Grid>
       <Grid
         item
         xs={12}
         md={12}
-        lg={10}
-        xl={7}
+        lg={12}
+        xl={12}
         className={styles.taglineContainer}
       >
         <Typography variant="h6" className={styles.firstLine}>
@@ -31,8 +44,8 @@ const Home: NextPage = () => {
           Glide through some of the{" "}
           <span className={styles.colorText2}>awesomeness</span> created by{" "}
           <span className={styles.colorText1}>our team.</span> Each project is a
-          work of art with the mix of{" "}
-          <span className={styles.colorText1}>Technology</span> and{" "}
+          work of art with the mix of{" "} <br/>
+          <span className={styles.colorText2}>Technology</span> and{" "}
           <span className={styles.colorText1}>Innovation</span> serving the
           world as a solution to comonly faced{" "}
           <span className={styles.colorText2}>problems</span>
@@ -48,7 +61,6 @@ const Home: NextPage = () => {
           xl={12}
           className={styles.portfolioDetails}
           spacing={3}
-          key={`item-${key}`}
         >
           <Grid item xs={12} md={6} xl={6}>
             {key % 2 !== 0 ? (
@@ -68,6 +80,7 @@ const Home: NextPage = () => {
                 content={item.content}
                 button_text={item.button_text}
                 alignText={true}
+                image= {item.image}
               />
             )}
           </Grid>
@@ -89,6 +102,7 @@ const Home: NextPage = () => {
                 content={item.content}
                 button_text={item.button_text}
                 alignText={false}
+                image= {item.image}
               />
             )}
           </Grid>
