@@ -25,9 +25,11 @@ const TopBarMobile: NextPage = () => {
   return (
     <div className={styles.roofTop}>
       <div className={styles.fixedContent}>
-      <Box width={100}>
+        <Box width={100}>
+          <Link href="/">
             <Image src={logo} />
-          </Box>
+          </Link>
+        </Box>
         <Image
           src={collapseIcon}
           width="25px"
@@ -48,28 +50,53 @@ const TopBarMobile: NextPage = () => {
           />
         </div>
         <div className={styles.contentDiv}>
-          <Link href="/" >
-            <Typography className={styles.lineItem} variant="h5" align="left" onClick={toggleDrawer}>
+          <Link href="/">
+            <Typography
+              className={styles.lineItem}
+              variant="h5"
+              align="left"
+              onClick={toggleDrawer}
+            >
               Home
             </Typography>
           </Link>
           <Link href="/">
-            <Typography className={styles.lineItem} variant="h5" align="left" onClick={toggleDrawer}> 
+            <Typography
+              className={styles.lineItem}
+              variant="h5"
+              align="left"
+              onClick={toggleDrawer}
+            >
               How we work
             </Typography>
           </Link>
           <Link href="/">
-            <Typography className={styles.lineItem} variant="h5" align="left" onClick={toggleDrawer}>
+            <Typography
+              className={styles.lineItem}
+              variant="h5"
+              align="left"
+              onClick={toggleDrawer}
+            >
               About Us
             </Typography>
           </Link>
           <Link href="/portfolio">
-            <Typography className={styles.lineItem} variant="h5" align="left" onClick={toggleDrawer}>
+            <Typography
+              className={styles.lineItem}
+              variant="h5"
+              align="left"
+              onClick={toggleDrawer}
+            >
               Portfolio
             </Typography>
           </Link>
           <Link href="/">
-            <Typography className={styles.lineItem} variant="h5" align="left" onClick={toggleDrawer}>
+            <Typography
+              className={styles.lineItem}
+              variant="h5"
+              align="left"
+              onClick={toggleDrawer}
+            >
               Contact Us
             </Typography>
           </Link>
