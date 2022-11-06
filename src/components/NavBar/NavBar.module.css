@@ -1,16 +1,26 @@
+.navbar *{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
+  font-family: 'Josefin Sans', sans-serif;
   padding: 1vw 5vw;
 }
 
 .active {
   color: #f72585;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .inactive {
+  color : white;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.logo {
+  width : 138px
 }

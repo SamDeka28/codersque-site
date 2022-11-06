@@ -10,6 +10,9 @@ const MyCard = styled(Paper)(
     border-radius: 20px;
     position: relative;
     z-index: 20;
+    ${theme.breakpoints.down('md')} {
+      width : initial;  
+    }
   `
 );
 
@@ -19,7 +22,7 @@ interface IProps {
 
 const ServiceCard: React.FC<IProps> = ({ service }) => {
   return (
-    <MyCard elevation={3}>
+    <MyCard style={{boxShadow : "0px 4px 30px 59px rgba(204,204,204,.25)"}}>
       <Box>
         <Image src={service.icon} />
       </Box>

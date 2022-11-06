@@ -20,11 +20,11 @@ export default function NavBar() {
     <Box sx={{ position: "relative" }}>
       <AppBar position="absolute" color="transparent" elevation={0}>
         <Toolbar className={styles.navbar}>
-          <Box width={120}>
+          <div className={styles.logo}>
             <Image src={logo} />
-          </Box>
+          </div>
 
-          <Stack direction="row" spacing={5}>
+          <Stack direction="row" spacing={10}>
             <Link href="/">
               <Typography
                 className={
