@@ -3,3 +3,14 @@
   justify-content: space-between;
   padding: 1vw 5vw;
 }
+
+.active {
+  color: #f72585;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.inactive {
+  cursor: pointer;
+  font-weight: bold;
+}

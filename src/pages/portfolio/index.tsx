@@ -22,9 +22,9 @@ const Home: NextPage = () => {
   },[])
   return (
     <Grid container item xs={12} className={styles.container}>
-      {/* <Grid item xs={12} style={{color:"white"}}>
+      <Grid item xs={12} style={{color:"white"}}>
         <NavBar />
-      </Grid> */}
+      </Grid>
       <Grid
         item
         xs={12}

@@ -8,7 +8,7 @@ interface IProps {
 
 const SectionTitle: React.FC<IProps> = ({ title }) => {
   return (
-    <Box sx={{ marginBottom: 8 }}>
+    <Box sx={{ marginBottom: 8, position: "relative" }}>
       <Typography variant="h3" color="primary" fontWeight={"bold"}>
         {title}
       </Typography>
