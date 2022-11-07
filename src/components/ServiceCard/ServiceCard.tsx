@@ -1,6 +1,7 @@
 import { Box, css, Paper, Stack, styled, Typography } from "@mui/material";
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
+import { useInView } from "framer-motion";
 
 const MyCard = styled(Paper)(
   ({ theme }) => css`
@@ -21,8 +22,12 @@ interface IProps {
 }
 
 const ServiceCard: React.FC<IProps> = ({ service }) => {
+ 
+  let ref= useRef(null)
+  let isInView = useInView(ref);
+
   return (
-    <MyCard style={{boxShadow : "0px 4px 30px 59px rgba(204,204,204,.25)"}}>
+    <MyCard style={{boxShadow : isInView ? "0px 4px 30px 59px rgba(204,204,204,.25)" : "none"}} ref={ref}>
       <Box>
         <Image src={service.icon} />
       </Box>

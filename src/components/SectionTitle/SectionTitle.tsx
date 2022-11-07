@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import styles from "./SectionTitle.module.css";
+import {motion} from "framer-motion"
 
 interface IProps {
   title: string;

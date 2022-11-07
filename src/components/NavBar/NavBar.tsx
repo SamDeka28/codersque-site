@@ -10,6 +10,7 @@ import styles from "./NavBar.module.css";
 import Link from "next/link";
 import { Stack } from "@mui/material";
 import { useRouter } from "next/router";
+import {motion} from "framer-motion";
 
 export default function NavBar() {
   const router = useRouter();
@@ -17,7 +18,7 @@ export default function NavBar() {
   console.log(router.pathname);
 
   return (
-    <Box sx={{ position: "relative" }}>
+    <motion.div style={{ position: "relative",zIndex:10 }} initial={{opacity : 0}} animate={{opacity :1}} transition={{duration : .5,delay:.5}}>
       <AppBar position="absolute" color="transparent" elevation={0}>
         <Toolbar className={styles.navbar}>
           <div className={styles.logo}>
@@ -93,6 +94,6 @@ export default function NavBar() {
           </Stack>
         </Toolbar>
       </AppBar>
-    </Box>
+    </motion.div>
   );
 }

@@ -38,7 +38,7 @@
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="50"/>
 <feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0.2 0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.0313726 0 0 0 0 0.352941 0 0 0 0.4 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_606_822"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_606_822" result="shape"/>
 </filter>
@@ -49,7 +49,7 @@
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="50"/>
 <feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0.2 0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.0313726 0 0 0 0 0.352941 0 0 0 0.4 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_606_822"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_606_822" result="shape"/>
 </filter>
@@ -60,7 +60,7 @@
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="50"/>
 <feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0.2 0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.0313726 0 0 0 0 0.352941 0 0 0 0.4 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_606_822"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_606_822" result="shape"/>
 </filter>
@@ -71,7 +71,7 @@
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="50"/>
 <feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0.2 0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.0313726 0 0 0 0 0.352941 0 0 0 0.4 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_606_822"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_606_822" result="shape"/>
 </filter>
@@ -82,7 +82,7 @@
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="50"/>
 <feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0 0.8 0 0 0 0.2 0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.0313726 0 0 0 0 0.352941 0 0 0 0.4 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_606_822"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_606_822" result="shape"/>
 </filter>

@@ -68,14 +68,14 @@
   display: block;
 }
 
-.ideas {
+.ideas,.contactform {
   height: 110vh;
   display:  flex;
   font-family: 'Josefin Sans', sans-serif;
   justify-content: space-evenly;
 }
 
-.ideasLeft { 
+.ideasLeft ,.contactFormLeft{ 
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -88,10 +88,14 @@
   margin-top: 62px;
 }
 
-.ideasHeading {
-  font-size : 96px;
+.ideasHeading,.contactTagHeading {
+  font-size : 82px;
   font-weight: bold;
   color :#2D1A59;
+}
+
+.contactTagHeading{
+  color : #ffffff;
 }
 
 .ideasSubheading{
@@ -102,11 +106,30 @@ color :#4D4D4D;
 margin-bottom: 64px;
 }
 
-.ideasTag {
-  /* padding-top: 10em; */
+.ideasTag,.contacttag {
+  padding-top: 10em;
+  line-height: 98px;
 }
 
-.ideasLeft .ideasTag > span {
+.contacttag{
+  padding : 8em
+}
+
+.watermark{
+  font-size: 6vw;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  font-weight: 600;
+  top: 0;
+  margin-top: -0px !important;
+  transform: translate(8%,-30%);
+  z-index: 0;
+  line-height: 98px;
+}
+
+
+
+.ideasLeft .ideasTag > span,.contactform .contacttag > span,.watermark span {
   display: block;
 }
 
@@ -191,15 +214,110 @@ margin-bottom: 64px;
   .heroactions button{
     width :45%;
   }
+
+  .ideas{
+    display: none;
+  }
+  .contactform { 
+    flex-wrap: wrap;
+  }
+  .contacttag{
+    padding: 4em;
+    line-height: 10vw;
+  }
+  .contacttag span{
+    font-size : 9vw !important;
+  }
+
+  .contactform > div{
+    height : max-content !important;
+  }
+
+  .contactform > div > div{
+    width : 100vw;
+    left : 0px !important;
+    height : 100% !important;
+    top : 0px !important;
+  }
+
+  .contactform > div > p:nth-child(2){
+  transform: translate(0) !important;
+  }
+
+  .contactFormLeft > div > div { 
+    width : 90vw;
+    padding : 1em;
+  }
+
+  .contactform h4{
+    margin-top : 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .watermark {
+    display: none;
+  }
 }
 
 @media only screen and (min-width : 900px) and (max-width : 1280px){
   .subTag { 
     width : 50%
   }
+
+  .ideas { 
+    flex-wrap: wrap;
+  }
+
+  .ideas{
+    display: none;
+  }
+  .contactform { 
+    flex-wrap: wrap;
+  }
+  .contacttag{
+    padding: 4em;
+    line-height: 10vw;
+  }
+  .contacttag span{
+    font-size : 9vw !important;
+  }
+
+  .contactform > div{
+    height : max-content !important;
+  }
+
+  .contactform > div > div{
+    width : 100vw;
+    left : 0px !important;
+    height : 100% !important;
+    top : 0px !important;
+  }
+
+  .contactform > div > p:nth-child(2){
+  transform: translate(0) !important;
+  }
+
+  .contactFormLeft > div > div { 
+    width : 90vw;
+    padding : 1em;
+  }
+
+  .contactform h4{
+    margin-top : 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .watermark {
+    display: none;
+  }
 }
 
 @media only screen and (max-width : 600px){
+   .ideas { 
+    flex-wrap: wrap;
+  }
   .heroactions button{
     width :100%;
     height: 50px;

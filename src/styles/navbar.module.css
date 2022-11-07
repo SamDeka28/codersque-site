@@ -1,0 +1,50 @@
+
+ .roofTop {
+    position: fixed;
+    width: 100%;
+    background: blue;
+    z-index:1000
+  }
+  .fixedContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2B2A6D;
+    padding: 1.2em 1em 1.2em 1.8em;
+    /* border:  1px solid rgba(66; 143; 156; 0.25);
+    box-shadow: 0px 2px 10px rgba(0; 0; 0; 0.15); */
+  }
+  .collapse {
+    width: 1.5em;
+    height: 1.2em;
+    cursor: pointer;
+  }
+  .mobileLogo {
+    width: 3.5em;
+  }
+  .drawerDiv {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2em 1em;
+    align-items: center;
+    background: #2B2A6D;
+  }
+  .crossIconDes {
+    width: 1.25em;
+    height: 1.2em;
+    cursor: pointer;
+  }
+  .contentDiv {
+    padding: 3em;
+    height: 100vh;
+    background: #2B2A6D;
+  }
+  .lineItem {
+    color: #ffffff;
+    margin-bottom: 2em;
+    font-weight: 600;
+    cursor: 'pointer';
+  }
+  .paper {
+    overflow-y: 'unset';
+  }
