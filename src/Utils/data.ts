@@ -92,3 +92,47 @@ export const industries = [
     icon: edtech,
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "About",
+    links: ["Our Company", "How we work", "Our Processes"],
+  },
+  {
+    title: "Our Processes",
+    links: [
+      "Ios Application Development",
+      "Android Application Development",
+      "Desktop Application Development",
+      "Custom Application Development",
+      "Minimum Viable Product",
+      "Proof Of Concepts",
+    ],
+  },
+  {
+    title: "Industries",
+    links: [
+      "Healthcare",
+      "Financial Technologies",
+      "E-commerce",
+      "Social Media Networking",
+      "Retail and Customer",
+      "Startup and Enterprizes",
+    ],
+  },
+  {
+    title: "Portfolios",
+    links: [
+      "US health Insurance digitization",
+      "Financial Reconciliation",
+      "Influencer engagement platform",
+      "Electronic medical records",
+      "Company Valuation application",
+      "Chatbot Integration",
+    ],
+  },
+  {
+    title: "Contact",
+    links: ["sales@codersque.com", "86381-87156"],
+  },
+];
