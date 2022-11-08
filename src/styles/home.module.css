@@ -11,12 +11,12 @@
   margin-top: 150px;
 }
 
-/* .hero {
+.hero {
   height: 100%;
   display: flex;
   font-family: "Poppins", sans-serif;
   justify-content: space-evenly;
-} */
+}
 
 .heroleft {
   display: flex;
