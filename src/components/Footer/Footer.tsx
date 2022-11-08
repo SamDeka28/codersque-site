@@ -14,14 +14,22 @@ const Footer = () => {
         <Grid container spacing={4} width="100%" padding="5vw">
           {footerLinks.map((section, index) => {
             return (
-              <Grid xs={2.4} className={styles.section}>
+              <Grid
+                key={`section-${index}`}
+                xs={2.4}
+                className={styles.section}
+              >
                 <Typography className={styles.title}>
                   {section.title}
                 </Typography>
                 <Grid container spacing={2} direction="column">
                   {section.links.map((link, indx) => {
                     return (
-                      <Grid xs={12} className={styles.section}>
+                      <Grid
+                        key={`link-${index}`}
+                        xs={12}
+                        className={styles.section}
+                      >
                         <Box display="flex">
                           {[4].includes(index) && [0].includes(indx) && (
                             <Box className={styles.icon}>
