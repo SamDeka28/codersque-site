@@ -5,29 +5,93 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Image from "next/image";
-import logo from "../../assets/images/logo-name.png";
+import logo from "../../assets/images/logo.svg";
 import styles from "./NavBar.module.css";
 import Link from "next/link";
 import { Stack } from "@mui/material";
+import { useRouter } from "next/router";
+import {motion} from "framer-motion";
 
 export default function NavBar() {
-  return (
-    <Box>
-      <AppBar position="absolute" color="transparent" elevation={0}>
-        <Toolbar className={styles.navbar}>
-          <Box width={120}>
-            <Image src={logo} />
-          </Box>
+  const router = useRouter();
 
-          <Stack direction="row" spacing={5}>
-            <Typography>Home</Typography>
-            <Typography>Services</Typography>
-            <Typography>How we work</Typography>
-            <Typography>About Us</Typography>
-            <Typography>Contact Us</Typography>
+  return (
+    <motion.div style={{ position: "relative",zIndex:10 }} initial={{opacity : 0}} animate={{opacity :1}} transition={{duration : .5,delay:.5}}>
+      <AppBar position="absolute" color="transparent" elevation={0}>
+        <Toolbar className={styles.navbar} style={{padding : "1em 5em"}}>
+          <div className={styles.logo}>
+            <Image src={logo} />
+          </div>
+
+          <Stack direction="row" spacing={10}>
+            <Link href="/">
+              <Typography
+                className={
+                  router.pathname == "/" ? styles.active : styles.inactive
+                }
+              >
+                Home
+              </Typography>
+            </Link>
+            {/* <Link href="/">
+              <Typography
+                className={
+                  router.pathname == "/services"
+                    ? styles.active
+                    : styles.inactive
+                }
+              >
+                Services
+              </Typography>
+            </Link> */}
+            <Link href="/">
+              <Typography
+                className={
+                  router.pathname == "/how-we-work"
+                    ? styles.active
+                    : styles.inactive
+                }
+              >
+                How we work
+              </Typography>
+            </Link>
+            <Link href="/">
+              <Typography
+                className={
+                  router.pathname == "/about-us"
+                    ? styles.active
+                    : styles.inactive
+                }
+              >
+                About Us
+              </Typography>
+            </Link>
+
+            <Link href="/portfolio">
+              <Typography
+                className={
+                  router.pathname == "/portfolio"
+                    ? styles.active
+                    : styles.inactive
+                }
+              >
+                Portfolio
+              </Typography>
+            </Link>
+            <Link href="/portfolio">
+              <Typography
+                className={
+                  router.pathname == "/contact-us"
+                    ? styles.active
+                    : styles.inactive
+                }
+              >
+                Contact Us
+              </Typography>
+            </Link>
           </Stack>
         </Toolbar>
       </AppBar>
-    </Box>
+    </motion.div>
   );
 }

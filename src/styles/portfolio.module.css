@@ -106,7 +106,9 @@
 .mobileDes {
   display: none;
 }
-
+.backgroundMobCheck  {
+    display: none;
+}
 /* ===========MEDIA QUERIES========== */
 @media screen and (max-width: 992px) {
   .textBox {
@@ -124,9 +126,11 @@
   }
   .mobileDes {
     display: block;
-    /* margin: 2em 0em; */
-    padding: 2em
-  }
+    margin:1em 0em;
+    }
+    .backgroundMobCheck  {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -183,13 +187,14 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .taglineContainer {
-    padding: 6em 3.5em;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    background-position: right;
+    .taglineContainer {
+      padding: 6em 3.5em;
+      margin-top: 2em;
+      margin-bottom: 1em;
+      background-position: right;
+    }
+    .content {
+        font-size: .8em;
+    }
   }
-  .content {
-    font-size: 0.8em;
-  }
-}
+  

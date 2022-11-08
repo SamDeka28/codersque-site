@@ -30,7 +30,7 @@ const ProjectDesc: React.FC<IProps> = ({
       <Typography variant="h5" className={styles.project}>
         <b>{project}</b>
       </Typography>
-      <Box className={styles.mobileDes}>
+      <Box className={styles.backgroundMobCheck}>
         <Image
           src={image}
           width="700px"
