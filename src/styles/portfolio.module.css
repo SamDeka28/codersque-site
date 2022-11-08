@@ -31,7 +31,7 @@
 }
 .content {
   font-size: 1em;
-  color:  #ffffff ;
+  color: #ffffff;
 }
 .portfolioDetails {
   padding: 4em;
@@ -41,14 +41,14 @@
 }
 .industry {
   font-size: 1.1em;
-  color: #3A0CA3;
+  color: #3a0ca3;
 }
 .project {
   font-weight: 800;
-  color: #3A0CA3;
+  color: #3a0ca3;
 }
 .inContent {
-  font-size: .95em;
+  font-size: 0.95em;
   margin-top: 0.7em;
   line-height: 1.7em;
   margin-bottom: 1.2em;
@@ -83,7 +83,7 @@
 .buttonDes {
   border-radius: 30px;
   text-transform: capitalize;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 .buttonDiv {
   display: flex;
@@ -106,7 +106,7 @@
   border: 1px solid #f72585 !important;
 }
 .mobileDes {
-display: none;
+  display: none;
 }
 .backgroundMobCheck  {
     display: none;
@@ -118,13 +118,13 @@ display: none;
   }
   .textBox2 {
     width: 100%;
-    text-align:left ;
+    text-align: left;
   }
   .backgroundDes {
-    display :none
+    display: none;
   }
   .backgroundDesRev {
-    display :none
+    display: none;
   }
   .mobileDes {
     display: block;
@@ -152,42 +152,41 @@ display: none;
     font-size: 12vw;
   }
   .content {
-    font-size: .6em
+    font-size: 0.6em;
   }
   .backgroundDes {
-    background-image :none
+    background-image: none;
   }
   .backgroundDesRev {
-    background-image :none
+    background-image: none;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .taglineContainer {
-        padding: 7em 2em;
-        margin-top: 2em;
-        margin-bottom: 1em;
-        background-position: initial;
-      }
-      .portfolioDetails {
-        padding: 2em;
-      }
-      .firstLine {
-        font-size: 1.5em;
-      }
-      .secondLine {
-        font-size: 2em;
-      }
-      .content {
-        font-size: .6em
-      }
-      .backgroundDes {
-        background-image :none
-      }
-      .backgroundDesRev {
-        background-image :none
-      }
+  .taglineContainer {
+    padding: 7em 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-position: initial;
+  }
+  .portfolioDetails {
+    padding: 2em;
+  }
+  .firstLine {
+    font-size: 1.5em;
+  }
+  .secondLine {
+    font-size: 2em;
+  }
+  .content {
+    font-size: 0.6em;
+  }
+  .backgroundDes {
+    background-image: none;
+  }
+  .backgroundDesRev {
+    background-image: none;
+  }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .taglineContainer {
