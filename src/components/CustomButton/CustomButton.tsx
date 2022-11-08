@@ -18,6 +18,9 @@ const FilledButton = styled(Button)(
     :hover {
       background-color: ${theme.palette.primary.main};
     }
+    ${theme.breakpoints.down("md")}{
+      width : 100%
+    }
   `
 );
 
@@ -32,6 +35,9 @@ const OutlinedButton = styled(Button)(
     width: 364px;
     height :70px;
     // font-size : 16px;
+    ${theme.breakpoints.down("md")}{
+      width : 100%
+    }
   `
 );
 
