@@ -44,6 +44,7 @@ const Portfolio: NextPage = () => {
         <Grid
           container
           item
+          key={key}
           xs={12}
           md={12}
           lg={12}
