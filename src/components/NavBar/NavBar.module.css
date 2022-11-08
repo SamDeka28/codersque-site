@@ -14,3 +14,20 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+.activeAlt {
+  color: #fff;
+  font-weight: bold;
+  height: 30px;
+  background-image: linear-gradient(#f72585, #f72585),
+                    linear-gradient(#26076C,#26076C);
+  background-repeat: no-repeat;
+  background-size: 30px 12%, calc(100% - 4px) 100%;
+  background-position: left bottom, 4px 0; 
+}
+
+.inactiveAlt {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}

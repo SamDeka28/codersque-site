@@ -1,0 +1,96 @@
+ .mainContainer {
+   height: 700px;
+   background-color: #26076C
+ }
+
+ .titleContainer {
+   margin-left: 5%;
+   padding-top: 8px;
+   background-image: linear-gradient(#f72585, #f72585),
+     linear-gradient(#26076C, #26076C);
+   background-repeat: no-repeat;
+   background-size: 100px 1%, calc(100% - 4px) 100%;
+   background-position: left top, 4px 0;
+ }
+
+ .titleText {
+   color: #fff;
+   font-size: 40px;
+   font-weight: 700;
+ }
+
+ .taglineText {
+   color: #fff;
+   font-size: 40px;
+ }
+
+ .shortDescriptionContainer {
+   margin-top: 100px;
+   color: #fff;
+ }
+
+ .shortDescriptionTitleText {
+   font-weight: 700;
+ }
+
+ @media screen and (max-width:1500px) {
+   .shortDescriptionContainer {
+     margin-top: 50px;
+     color: #fff;
+   }
+ }
+
+
+ .image1 {
+   position: absolute;
+   right: 25%;
+   top: 5%;
+   width: 450px
+ }
+
+ @media screen and (max-width:1200px) {
+   .image1 {
+     position: absolute;
+     right: 25%;
+     top: 16%;
+     width: 380px
+   }
+ }
+
+ @media screen and (max-width:1111px) {
+   .image1 {
+     position: absolute;
+     top: 42%;
+     left: 0%;
+     width: 320px;
+   }
+ }
+
+ .image2 {
+   position: absolute;
+   right: 5%;
+   top: 5%;
+   width: 450px
+ }
+
+ @media screen and (max-width:1200px) {
+  .image2 {
+    position: absolute;
+    right: 2%;
+    top: 16%;
+    width: 380px
+  }
+}
+
+ @media screen and (max-width:1111px) {
+   .image2 {
+     position: absolute;
+     top: 42%;
+     left: 42%;
+     width: 320px;
+   }
+ }
+
+ .secondContainer{
+  padding: 180px 200px 200px 200px;
+ }
