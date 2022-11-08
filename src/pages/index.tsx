@@ -136,7 +136,9 @@ const Home: NextPage = () => {
         <div style={{ height: '100vh', position: "relative", marginTop: "2em" }}>
           <div style={{ position: "absolute", height: "100%", aspectRatio: 1, top: 0, transform: "rotate(-7.44deg)", background: "#26076C", right: "-10%", borderRadius: "90px" }}
           ></div>
-          <Image src={flow} />
+          <div style={{left : "20% !important",maxWidth : "85% !important",transform : "translateX(20%)"}}>
+            <Image src={flow}/>
+          </div>
         </div>
       </div>
       {/*contact Section*/}

@@ -89,7 +89,7 @@
 }
 
 .ideasHeading,.contactTagHeading {
-  font-size : 82px;
+  font-size : 4vw;
   font-weight: bold;
   color :#2D1A59;
 }
@@ -101,9 +101,9 @@
 .ideasSubheading{
   /* font-size: 3rem; */
   font-weight: 400;
-font-size: 32px;
-color :#4D4D4D;
-margin-bottom: 64px;
+  font-size: 32px;
+  color :#4D4D4D;
+  margin-bottom: 64px;
 }
 
 .ideasTag,.contacttag {
@@ -220,6 +220,7 @@ margin-bottom: 64px;
   }
   .contactform { 
     flex-wrap: wrap;
+    height: 100%;
   }
   .contacttag{
     padding: 4em;
@@ -274,6 +275,7 @@ margin-bottom: 64px;
   }
   .contactform { 
     flex-wrap: wrap;
+    height: 100%;
   }
   .contacttag{
     padding: 4em;
