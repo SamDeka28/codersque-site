@@ -31,12 +31,12 @@ const Footer = () => {
                         className={styles.section}
                       >
                         <Box display="flex">
-                          {[4].includes(index) && [0].includes(indx) && (
+                          {index === 4 && indx === 0 && (
                             <Box className={styles.icon}>
                               <Image src={email} />
                             </Box>
                           )}
-                          {[4].includes(index) && [1].includes(indx) && (
+                          {index === 4 && indx === 1 && (
                             <Box className={styles.icon}>
                               <Image src={phone} />
                             </Box>
