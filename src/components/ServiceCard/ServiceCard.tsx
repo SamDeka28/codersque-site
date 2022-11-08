@@ -1,6 +1,7 @@
 import { Box, css, Paper, Stack, styled, Typography } from "@mui/material";
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
+import { useInView } from "framer-motion";
 
 const MyCard = styled(Paper)(
   ({ theme }) => css`
@@ -10,6 +11,9 @@ const MyCard = styled(Paper)(
     border-radius: 20px;
     position: relative;
     z-index: 20;
+    ${theme.breakpoints.down('md')} {
+      width : initial;  
+    }
   `
 );
 
@@ -18,13 +22,17 @@ interface IProps {
 }
 
 const ServiceCard: React.FC<IProps> = ({ service }) => {
+ 
+  let ref= useRef(null)
+  let isInView = useInView(ref);
+
   return (
-    <MyCard elevation={3}>
+    <MyCard style={{boxShadow : isInView ? "0px 4px 30px 59px rgba(204,204,204,.25)" : "none"}} ref={ref}>
       <Box>
         <Image src={service.icon} />
       </Box>
       <Typography
-        sx={{ fontWeight: "bold", fontSize: "1.3rem", margin: "10px 0" }}
+        sx={{ fontWeight: "bold", fontSize: "1.3rem", margin: "10px 0",fontFamily: 'Josefin Sans'}}
       >
         {service.name}
       </Typography>
@@ -32,7 +40,7 @@ const ServiceCard: React.FC<IProps> = ({ service }) => {
         {service.desc}
       </Typography>
       <Typography
-        sx={{ fontWeight: "bold", fontSize: "1.1rem", margin: "20px 0" }}
+        sx={{ fontWeight: "bold", fontSize: "1.1rem", margin: "20px 0",fontFamily: 'Josefin Sans' }}
       >
         Technologies/Tools :
       </Typography>

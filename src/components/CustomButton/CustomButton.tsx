@@ -11,10 +11,15 @@ const FilledButton = styled(Button)(
     padding: 0.5rem;
     border-radius: 100rem;
     text-transform: none;
-    width: 100%;
-
+    width: 364px;
+    height :70px;
+    font-size : 16px;
+    font-family: 'Poppins', sans-serif;
     :hover {
       background-color: ${theme.palette.primary.main};
+    }
+    ${theme.breakpoints.down("md")}{
+      width : 100%
     }
   `
 );
@@ -23,10 +28,16 @@ const OutlinedButton = styled(Button)(
   ({ theme }) => css`
     border: solid 2px ${theme.palette.secondary.main};
     padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
     border-radius: 100rem;
     color: ${theme.palette.secondary.main};
     text-transform: none;
-    width: 100%;
+    width: 364px;
+    height :70px;
+    // font-size : 16px;
+    ${theme.breakpoints.down("md")}{
+      width : 100%
+    }
   `
 );
 

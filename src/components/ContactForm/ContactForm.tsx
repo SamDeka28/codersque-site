@@ -54,8 +54,8 @@ const ContactForm = () => {
         <Box className={styles.textAreaContainer}>
           <textarea className={styles.textarea}></textarea>
         </Box>
-        <Box width="30%">
-          <CustomButton title="Attach file" type="filled" arrow={false} />
+        <Box width="100%">
+          <CustomButton title="Attach file" type="outlined" arrow={false}/>
         </Box>
         <Box sx={{ display: "flex" }}>
           <input style={{ marginRight: "10px" }} type="checkbox"></input>

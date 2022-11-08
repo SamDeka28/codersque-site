@@ -53,6 +53,7 @@ const Portfolio: NextPage = () => {
       </Grid>
       {CONTENT_DETAILS.map((item, key) => (
         <Grid
+          key={key}
           container
           item
           xs={12}

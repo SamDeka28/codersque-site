@@ -10,21 +10,20 @@ import styles from "./NavBar.module.css";
 import Link from "next/link";
 import { Stack } from "@mui/material";
 import { useRouter } from "next/router";
+import {motion} from "framer-motion";
 
 export default function NavBar() {
   const router = useRouter();
 
-  console.log(router.pathname);
-
   return (
-    <Box sx={{ position: "relative" }}>
+    <motion.div style={{ position: "relative",zIndex:10 }} initial={{opacity : 0}} animate={{opacity :1}} transition={{duration : .5,delay:.5}}>
       <AppBar position="absolute" color="transparent" elevation={0}>
-        <Toolbar className={styles.navbar}>
-          <Box width={120}>
+        <Toolbar className={styles.navbar} style={{padding : "1em 5em"}}>
+          <div className={styles.logo}>
             <Image src={logo} />
-          </Box>
+          </div>
 
-          <Stack direction="row" spacing={5}>
+          <Stack direction="row" spacing={10}>
             <Link href="/">
               <Typography
                 className={
@@ -93,6 +92,6 @@ export default function NavBar() {
           </Stack>
         </Toolbar>
       </AppBar>
-    </Box>
+    </motion.div>
   );
 }
