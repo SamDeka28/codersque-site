@@ -60,11 +60,30 @@
  @media screen and (max-width:1111px) {
    .image1 {
      position: absolute;
-     top: 42%;
-     left: 0%;
-     width: 320px;
+     top: 55%;
+     /* left: -5%; */
+     width: 220px;
    }
  }
+
+ @media screen and (max-width:900px) {
+  .image1 {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    width: 220px;
+  }
+}
+
+ 
+ @media screen and (max-width:400px) {
+  .image1 {
+    position: absolute;
+    top: 55%;
+    left: -5%;
+    width: 200px;
+  }
+}
 
  .image2 {
    position: absolute;
@@ -85,12 +104,52 @@
  @media screen and (max-width:1111px) {
    .image2 {
      position: absolute;
-     top: 42%;
-     left: 42%;
-     width: 320px;
+     top: 55%;
+     /* left: 40%; */
+     width: 220px;
    }
  }
 
+ @media screen and (max-width:900px) {
+  .image2 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 220px;
+  }
+}
+
+ @media screen and (max-width:400px) {
+  .image2 {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    width: 200px;
+  }
+}
+
  .secondContainer{
-  padding: 180px 200px 200px 200px;
+  margin-top:150px;
+  margin-bottom:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 20px
  }
+ 
+ @media screen and (max-width:400px) {
+  .secondContainer{
+    margin-top:40px;
+    margin-bottom:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px
+   }
+}
+
+ @media screen and (max-width:1000px) {
+  .separator {
+    display: none;
+  }
+}
