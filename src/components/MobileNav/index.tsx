@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Drawer, Box, Typography, Button } from "@mui/material";
 import styles from "../../styles/navbar.module.css";
-import crossIcon from "../../assets/images/cross2.png";
+import crossIcon from "../../assets/images/cross.svg";
 import logo from "../../assets/images/transLogo.png";
+import logoColor from "../../assets/images/logo.svg";
 import collapseIcon from "../../assets/images/toggler.png";
+import collapseIconSec from "../../assets/images/toggler.svg";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,27 +15,34 @@ const TopBarMobile: NextPage = () => {
   const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollHeight, setScrollHeight] = useState(0);
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
-  // const navigateTo = routePath :any => {
-  //   setIsOpen(!isOpen);
-  //   // navigate(routePath);
-  // };
+ 
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    console.log("position-doggy",position)
+    setScrollHeight(position);
+};
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+  }, []);
 
   return (
-    <div className={styles.roofTop}>
-      <div className={styles.fixedContent}>
+    <div className={scrollHeight>50 ?styles.roofTopScroll : styles.roofTop}>
+      <div className={scrollHeight>50?styles.fixedContentScroll: styles.fixedContent}>
         <Box width={100}>
           <Link href="/">
-            <Image src={logo} />
+            <Image src={scrollHeight>20 ?logoColor:logo} />
           </Link>
         </Box>
         <Image
-          src={collapseIcon}
+          src={scrollHeight>20 ? collapseIconSec:collapseIcon}
           width="25px"
-          // className={styles.backgroundImg}
           alt="collapseIcon"
           onClick={toggleDrawer}
         />
@@ -44,7 +53,6 @@ const TopBarMobile: NextPage = () => {
             src={crossIcon}
             width="25px"
             height="25px"
-            // className={styles.backgroundImg}
             alt="crossIcon"
             onClick={toggleDrawer}
           />

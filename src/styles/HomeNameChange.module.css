@@ -1,0 +1,18 @@
+.container {
+  padding-left: 5vw;
+  overflow-x: hidden;
+}
+
+.coloredRect1 {
+  width: 60%;
+  right: 0;
+  position: absolute;
+}
+
+.vector1 {
+  width: 65%;
+}
+
+.sectionContainer {
+  margin-top: 5vw;
+}

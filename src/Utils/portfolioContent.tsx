@@ -3,7 +3,7 @@ import desktop2 from "../assets/images/desktop2.svg"
 import desktop3 from "../assets/images/desktop3.svg"
 import desktop4 from "../assets/images/desktop4.svg"
 
-export const FIRST_TAGLINE = "A Portfolio Built With Passion"
+export const FIRST_TAGLINE = "See some of our work."
 export const SECOND_TAGLINE ="Some Of Our Work."
 
 

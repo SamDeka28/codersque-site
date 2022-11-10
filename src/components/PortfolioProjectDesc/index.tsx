@@ -25,7 +25,7 @@ const ProjectDesc: React.FC<IProps> = ({
   return (
     <Box className={alignText ? styles.textBox : styles.textBox2}>
       <Typography variant="h6" className={styles.industry}>
-        <b>{type} :</b> {name}
+        {type} : {name}
       </Typography>
       <Typography variant="h5" className={styles.project}>
         <b>{project}</b>
@@ -33,7 +33,7 @@ const ProjectDesc: React.FC<IProps> = ({
       <Box className={styles.backgroundMobCheck}>
         <Image
           src={image}
-          width="700px"
+          // width="700px"
           className={styles.backgroundImg}
           alt="desktop"
         />
