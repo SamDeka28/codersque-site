@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Drawer, Box, Typography, Button } from "@mui/material";
 import styles from "../../styles/navbar.module.css";
-import crossIcon from "../../assets/images/cross2.png";
+import crossIcon from "../../assets/images/cross.svg";
 import logo from "../../assets/images/transLogo.png";
 import logoColor from "../../assets/images/logo.svg";
 import collapseIcon from "../../assets/images/toggler.png";
+import collapseIconSec from "../../assets/images/toggler.svg";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -40,7 +41,7 @@ const TopBarMobile: NextPage = () => {
           </Link>
         </Box>
         <Image
-          src={collapseIcon}
+          src={scrollHeight>20 ? collapseIconSec:collapseIcon}
           width="25px"
           alt="collapseIcon"
           onClick={toggleDrawer}
