@@ -33,7 +33,7 @@ const ProjectDesc: React.FC<IProps> = ({
       <Box className={styles.backgroundMobCheck}>
         <Image
           src={image}
-          width="700px"
+          // width="700px"
           className={styles.backgroundImg}
           alt="desktop"
         />

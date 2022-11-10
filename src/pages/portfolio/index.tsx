@@ -1,29 +1,18 @@
-import { Grid } from "@mui/material";
-import { Box, Typography, Button } from "@mui/material";
-import NavBar from "../../components/NavBar";
+import { Grid, Box, Typography, Button } from "@mui/material";
 import type { NextPage } from "next";
 import styles from "../../styles/portfolio.module.css";
-import { FIRST_TAGLINE } from "../../Utils/portfolioContent";
-import { CONTENT_DETAILS } from "../../Utils/portfolioContent";
+import { FIRST_TAGLINE, CONTENT_DETAILS } from "../../Utils/portfolioContent";
 import Image from "next/image";
 import ProjectDesc from "../../components/PortfolioProjectDesc";
-import TopBarMobile from "../../components/MobileNav";
 import NavToggler from "../../components/NavToggle";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Portfolio: NextPage = () => {
-  let size = 0
-  const [ screenSize , setScreenSize] = useState(0)
-  useEffect(()=>{
-    if (typeof window !== 'undefined') {
-      size =  window.innerWidth
-      setScreenSize(window.innerWidth)
-    }
-  },[])
+  useEffect(() => {}, []);
   return (
     <Grid container item xs={12} className={styles.container}>
       <Grid item xs={12}>
-       {<NavToggler/>}
+        <NavToggler />
       </Grid>
       <Grid
         item
@@ -38,24 +27,24 @@ const Portfolio: NextPage = () => {
         </Typography>
         <Typography variant="h4" className={styles.secondLine}>
           {" "}
-          Some of our <span className={styles.colorText1}>Work.</span>
+          Some Priceless <span className={styles.colorText1}>Possessions.</span>
         </Typography>
-        {/* <Typography variant="h6" className={styles.content}>
+        <Typography variant="h6" className={styles.content}>
           Glide through some of the{" "}
           <span className={styles.colorText2}>awesomeness</span> created by{" "}
           <span className={styles.colorText1}>our team.</span> Each project is a
-          work of art with the mix of{" "} <br/>
+          work of art with the mix of <br />
           <span className={styles.colorText2}>Technology</span> and{" "}
           <span className={styles.colorText1}>Innovation</span> serving the
           world as a solution to comonly faced{" "}
           <span className={styles.colorText2}>problems</span>
-        </Typography> */}
+        </Typography>
       </Grid>
       {CONTENT_DETAILS.map((item, key) => (
         <Grid
-          key={key}
           container
           item
+          key={key}
           xs={12}
           md={12}
           lg={12}
@@ -66,12 +55,14 @@ const Portfolio: NextPage = () => {
           <Grid item xs={12} md={6} xl={6}>
             {key % 2 !== 0 ? (
               <Box className={styles.backgroundDesRev}>
-                <Image
-                  src={item.image}
-                  width="700px"
-                  className={styles.backgroundImg}
-                  alt="desktop"
-                />
+                <div className={styles.leftControl}>
+                  <Image
+                    src={item.image}
+                    width="700px"
+                    className={styles.backgroundImg}
+                    alt="desktop"
+                  />
+                </div>
               </Box>
             ) : (
               <ProjectDesc
@@ -81,19 +72,21 @@ const Portfolio: NextPage = () => {
                 content={item.content}
                 button_text={item.button_text}
                 alignText={true}
-                image= {item.image}
+                image={item.image}
               />
             )}
           </Grid>
           <Grid item xs={12} md={6} xl={6}>
             {key % 2 == 0 ? (
               <Box className={styles.backgroundDes}>
-                <Image
-                  src={item.image}
-                  width="700px"
-                  className={styles.backgroundImg}
-                  alt="desktop"
-                />
+                <div className={styles.rightControl}>
+                  <Image
+                    src={item.image}
+                    width="700px"
+                    className={styles.backgroundImg}
+                    alt="desktop"
+                  />
+                </div>
               </Box>
             ) : (
               <ProjectDesc
@@ -103,7 +96,7 @@ const Portfolio: NextPage = () => {
                 content={item.content}
                 button_text={item.button_text}
                 alignText={false}
-                image= {item.image}
+                image={item.image}
               />
             )}
           </Grid>
