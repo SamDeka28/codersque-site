@@ -51,10 +51,10 @@
     background: #2B2A6D;
   }
   .lineItem {
-    color: #ffffff;
-    margin-bottom: 2em;
-    font-weight: 600;
-    cursor: 'pointer';
+    color: #ffffff !important;
+    margin-bottom: 2em !important;
+    font-weight: 600 !important;
+    cursor: 'pointer' !important;
   }
   .paper {
     overflow-y: 'unset';
