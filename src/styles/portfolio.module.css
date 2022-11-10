@@ -11,13 +11,17 @@
 .firstLine {
   color: #ffffff !important;
   font-size: 2em !important;
-  font-weight: 600 !important;
+  font-weight: 300 !important;
   margin-bottom: 0.5em !important;
+  text-align: center;
+  font-family : "Josefin sans",sans-serif;
 }
 .secondLine {
   color: #ffffff !important;
-  font-size: 3em !important;
+  font-size: 7vw !important;
   font-weight: 600 !important;
+  font-family: "Poppins",sans-serif;
+  text-align: center !important;
   margin-bottom: 0.5em !important;
 }
 .colorText1 {
