@@ -9,16 +9,16 @@
   font-family: "Poppins", sans-serif !important;
 }
 .firstLine {
-  color: #ffffff;
-  font-size: 2em;
-  font-weight: 600;
-  margin-bottom: 0.5em;
+  color: #ffffff !important;
+  font-size: 2em !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5em !important;
 }
 .secondLine {
-  color: #ffffff;
-  font-size: 3em;
-  font-weight: 600;
-  margin-bottom: 0.5em;
+  color: #ffffff !important;
+  font-size: 3em !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5em !important;
 }
 .colorText1 {
   color: #f72585 !important;
@@ -29,8 +29,8 @@
   font-weight: 600;
 }
 .content {
-  font-size: 1em;
-  color: #ffffff;
+  font-size: 1em !important;
+  color: #ffffff !important;
 }
 .portfolioDetails {
   padding: 4em;
