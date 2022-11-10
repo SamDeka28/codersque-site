@@ -4,7 +4,7 @@ import styles from "../../styles/navbar.module.css";
 import crossIcon from "../../assets/images/cross2.png";
 import logo from "../../assets/images/transLogo.png";
 import logoColor from "../../assets/images/logo.svg";
-import collapseIcon from "../../assets/images/toggle.svg";
+import collapseIcon from "../../assets/images/toggler.png";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";

@@ -157,10 +157,10 @@
     padding:  1em 2em;
   }
   .firstLine {
-    font-size: 1.7em !important;
+    font-size: 1em !important;
   }
   .secondLine {
-    font-size: 2.5em !important;
+    font-size: 1.9em !important;
   }
   .content {
     font-size: 0.8em !important;
@@ -198,13 +198,13 @@
     padding:  1em 2em;
   }
   .firstLine {
-    font-size: 1.5em !important;
+    font-size: 1.8em !important;
   }
   .secondLine {
     font-size: 2.5em !important;
   }
   .content {
-    font-size: 0.6em !important;
+    font-size: 0.9em !important;
   }
   .backgroundDes {
     background-image: none;
