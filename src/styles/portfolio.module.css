@@ -1,7 +1,7 @@
 .taglineContainer {
   padding: 14em 6em;
   margin-top: 4em;
-  background-image: url("../assets/images/portHead.svg");
+  background-image: url("../assets/images/portHero.svg");
   background-position: bottom;
   background-size: cover;
   margin-top: 0;
@@ -10,13 +10,15 @@
 }
 .firstLine {
   color: #ffffff;
-  font-size: 2em;
-  font-weight: 600;
+  font-size:1.5vw;
+  /* font-weight: 600; */
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 0.5em;
 }
 .secondLine {
   color: #ffffff;
-  font-size: 3em;
+  font-size: 5.25vw;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
