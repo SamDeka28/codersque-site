@@ -40,8 +40,10 @@
   font-family: "Poppins", sans-serif !important;
 }
 .industry {
-  font-size: 1.1em;
+  font-size: 1em !important;
   color: #3a0ca3;
+  font-family: "Poppins",sans-serif;
+  font-weight: 300 !important;
 }
 .project {
   font-weight: 800;
@@ -157,10 +159,13 @@
     padding:  1em 2em;
   }
   .firstLine {
-    font-size: 1.2em !important;
+    font-size: 1em !important;
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
   }
   .secondLine {
     font-size: 2.3em !important;
+    font-family: "Poppins",sans-serif;
   }
   .content {
     font-size: 0.7em !important;

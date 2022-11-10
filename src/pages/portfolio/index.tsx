@@ -22,22 +22,12 @@ const Portfolio: NextPage = () => {
         xl={12}
         className={styles.taglineContainer}
       >
-        <Typography variant="h6" className={styles.firstLine}>
-          {FIRST_TAGLINE}
-        </Typography>
         <Typography variant="h4" className={styles.secondLine}>
           {" "}
-          Some Priceless <span className={styles.colorText1}>Possessions.</span>
+          We  <span className={styles.colorText1}>innovate</span> and deliver <span className={styles.colorText1}>excellence</span>.
         </Typography>
-        <Typography variant="h6" className={styles.content}>
-          Glide through some of the{" "}
-          <span className={styles.colorText2}>awesomeness</span> created by{" "}
-          <span className={styles.colorText1}>our team.</span> Each project is a
-          work of art with the mix of <br />
-          <span className={styles.colorText2}>Technology</span> and{" "}
-          <span className={styles.colorText1}>Innovation</span> serving the
-          world as a solution to comonly faced{" "}
-          <span className={styles.colorText2}>problems</span>
+        <Typography variant="h6" className={styles.firstLine}>
+          {FIRST_TAGLINE}
         </Typography>
       </Grid>
       {CONTENT_DETAILS.map((item, key) => (
