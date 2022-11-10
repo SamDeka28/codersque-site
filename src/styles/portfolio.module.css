@@ -51,10 +51,10 @@
   color: #3a0ca3;
 }
 .inContent {
-  font-size: 0.95em;
-  margin-top: 0.7em;
-  line-height: 1.7em;
-  margin-bottom: 1.2em;
+  font-size: 0.95em !important;
+  margin-top: 0.7em !important;
+  line-height: 1.7em !important;
+  margin-bottom: 1.2em !important;
 }
 .backgroundDes {
   background-image: url("../assets/images/portback.svg");
@@ -84,9 +84,9 @@
 }
 
 .buttonDes {
-  border-radius: 30px;
-  text-transform: capitalize;
-  font-size: 0.9em;
+  border-radius: 30px !important;
+  text-transform: capitalize !important;
+  font-size: 0.9em !important;
 }
 .buttonDiv {
   display: flex;
@@ -96,12 +96,12 @@
   margin-bottom: 10em;
 }
 .buttonDesLoad {
-  color: #f72585;
-  border: 1px solid #f72585;
-  border-radius: 30px;
-  padding: 0.5em 5em;
-  text-transform: capitalize;
-  font-weight: 600;
+  color: #f72585 !important;
+  border: 1px solid #f72585 !important;
+  border-radius: 30px !important;
+  padding: 0.5em 5em !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
 }
 
 .buttonDesLoad :hover {
