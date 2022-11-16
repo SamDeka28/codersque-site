@@ -4,6 +4,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "../theme";
 import Head from "next/head";
 import Router from "next/router";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const routeChange = () => {
@@ -31,6 +32,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/Logo.png" />
       </Head>
       <Component {...pageProps} />
+
+      {/* <Footer /> */}
     </ThemeProvider>
   );
 }

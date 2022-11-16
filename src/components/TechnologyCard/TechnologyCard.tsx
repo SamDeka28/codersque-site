@@ -17,6 +17,13 @@ const MyCard = styled(Paper)(
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index : 1;
+    box-shadow : 0px 4px 50px 39px rgba(33,8,90,.30);
+    background: linear-gradient(135deg, #FAB2FF 0%, #1904E5 100%);
+    ${theme.breakpoints.down('md')}{
+      width : 6.5rem;
+      box-shadow : 0px 4px 10px 20px rgba(33,8,90,.30);
+    }
   `
 );
 
@@ -26,7 +33,7 @@ interface IProps {
 
 const TechnologyCard: React.FC<IProps> = ({ technology }) => {
   return (
-    <MyCard elevation={3}>
+    <MyCard>
       <Box>
         <Box
           sx={{
@@ -42,7 +49,7 @@ const TechnologyCard: React.FC<IProps> = ({ technology }) => {
             src={technology.icon}
           />
         </Box>
-        <Typography sx={{ fontSize: "20px", margin: "10px 0" }}>
+        <Typography sx={{ fontSize: "20px", margin: "10px 0",fontFamily: 'Josefin Sans'}}>
           {technology.name}
         </Typography>
       </Box>

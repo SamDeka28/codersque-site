@@ -1,0 +1,62 @@
+
+ .roofTop {
+    position: fixed;
+    width: 100%;
+    background: #26076C;
+    z-index:1000
+  }
+  .roofTopScroll {
+    position: fixed;
+    width: 100%;
+    background: #26076C;
+    z-index:1000;
+  }
+  .fixedContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #26076C;
+    padding: 1.2em 1em 1.2em 1.8em;
+  }
+  .fixedContentScroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 1.2em 1em 1.2em 1.8em;
+    box-shadow: 0px 0px 12px -1px #b3a7be;
+  }
+  .collapse {
+    width: 1.5em;
+    height: 1.2em;
+    cursor: pointer;
+  }
+  .mobileLogo {
+    width: 3.5em;
+  }
+  .drawerDiv {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2em 1em;
+    align-items: center;
+    background: #2B2A6D;
+  }
+  .crossIconDes {
+    width: 1.25em;
+    height: 1.2em;
+    cursor: pointer;
+  }
+  .contentDiv {
+    padding: 3em;
+    height: 100vh;
+    background: #2B2A6D;
+  }
+  .lineItem {
+    color: #ffffff !important;
+    margin-bottom: 2em !important;
+    font-weight: 600 !important;
+    cursor: 'pointer' !important;
+  }
+  .paper {
+    overflow-y: 'unset';
+  }

@@ -1,74 +1,162 @@
 .taglineContainer {
-  padding: 8em 6em;
+  padding: 14em 6em;
   margin-top: 4em;
+  background-image: url("../assets/images/portHead.svg");
+  background-position: bottom;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: -11.5em;
+  font-family: "Poppins", sans-serif !important;
 }
 .firstLine {
-  color: #3a0ca3;
-  font-size: 2em;
-  font-weight: 600;
-  margin-bottom: 0.5em;
+  color: #ffffff !important;
+  font-size: 2em !important;
+  font-weight: 300 !important;
+  margin-bottom: 0.5em !important;
+  /* text-align: center; */
+  font-family: "Poppins", sans-serif !important;
+  display: none;
+}
+.secondaryText{
+  font-size: 3vw !important;
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff !important;
+  position: relative;
+  overflow: hidden;
 }
 .secondLine {
-  color: #3a0ca3;
-  font-size: 3em;
-  font-weight: 600;
-  margin-bottom: 0.5em;
+  color: #ffffff !important;
+  font-size: 7vw !important;
+  font-weight: 200 !important;
+  font-family: "Poppins",sans-serif;
+  /* text-align: center !important; */
+  /* margin-bottom: 0.5em !important; */
 }
 .colorText1 {
   color: #f72585 !important;
   font-weight: 600;
+  /* display: inline; */
+  position: relative;
+  width: max-content;
+  height: 8vw;
+  overflow: hidden;
 }
+
+.colorText1 span{
+  /* position: absolute; */
+  display: block;
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-family: "Josefin Sans",sans-serif;
+  width: max-content;
+}
+
+.animated{
+  transition: all 0.5s ease-in-out;
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+}
+
+@keyframes slide {
+  0% {
+    transform:  translateY(0%);
+  }
+  20% {
+    transform:  translateY(0%);
+  }
+  40%{
+    transform : translateY(-35%)
+  }
+  60%{
+    transform : translateY(-35%)
+  }
+  80%{
+    transform : translateY(-70%)
+  }
+  100%{
+    transform : translateY(-70%)
+  }
+}
+/* 
+.colorText1 span:nth-child(1){
+  transform: translateY(0%);
+}
+
+.colorText1 span:nth-child(2){
+  transform: translateY(100%);
+}
+
+.colorText1 span:nth-child(3){
+  transform: translateY(200%);
+} */
+
 .colorText2 {
-  color: #3a0ca3 !important;
+  color: #ffffff !important;
   font-weight: 600;
 }
 .content {
-  font-size: 1em;
+  font-size: 1em !important;
+  color: #ffffff !important;
 }
 .portfolioDetails {
   padding: 4em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Poppins", sans-serif !important;
 }
 .industry {
-  font-size: 1em;
+  font-size: 1em !important;
+  color: #3a0ca3;
+  font-family: "Poppins",sans-serif;
+  font-weight: 300 !important;
 }
 .project {
   font-weight: 800;
+  font-size: 1.65em;
+  color: #3a0ca3;
 }
 .inContent {
-  font-size: 0.8em;
-  margin-top: 0.7em;
-  line-height: 1.7em;
-  margin-bottom: 1.2em;
+  font-size: 0.95em !important;
+  margin-top: 0.7em !important;
+  line-height: 1.7em !important;
+  margin-bottom: 1.2em !important;
 }
 .backgroundDes {
   background-image: url("../assets/images/portback.svg");
   background-size: cover;
-  /* background-size: 100% 100%; */
+  background-size: 100% 100%;
   padding: 6em 2em !important;
 }
 .backgroundDesRev {
   background-image: url("../assets/images/reverseBack.svg");
   background-size: cover;
   padding: 6em 2em !important;
+  background-size: 100% 100%;
+}
+.backgroundImg {
+  /* width: 10em !important;
+    height: 10em !important; */
 }
 .textBox {
-  width: 50%;
+  width: 65%;
   margin: auto;
   text-align: left;
 }
 .textBox2 {
-  width: 50%;
+  width: 65%;
   margin: auto;
   text-align: right;
 }
 
 .buttonDes {
-  border-radius: 30px;
-  text-transform: capitalize;
-  font-size: 0.8em;
+  border-radius: 30px !important;
+  text-transform: capitalize !important;
+  font-size: 0.9em !important;
 }
 .buttonDiv {
   display: flex;
@@ -78,15 +166,161 @@
   margin-bottom: 10em;
 }
 .buttonDesLoad {
-  color: #f72585;
-  border: 1px solid #f72585;
-  border-radius: 30px;
-  padding: 0.5em 5em;
-  text-transform: capitalize;
-  font-weight: 600;
+  color: #f72585 !important;
+  border: 1px solid #f72585 !important;
+  border-radius: 30px !important;
+  padding: 0.5em 5em !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
 }
 
 .buttonDesLoad :hover {
   color: #f72585;
   border: 1px solid #f72585 !important;
+}
+.mobileDes {
+  display: none;
+}
+.backgroundMobCheck {
+  display: none;
+}
+.leftControl {
+  margin-left: 10em;
+}
+.rightControl {
+  margin-right: 10em;
+}
+
+
+.back{
+  background-color: white;
+  width :10%;
+  height : 10px;
+  border-radius: 8px;
+  background-color: #f72585;
+}
+
+/* ===========MEDIA QUERIES========== */
+@media screen and (max-width: 992px) {
+  .textBox {
+    width: 100%;
+  }
+  .textBox2 {
+    width: 100%;
+    text-align: left;
+  }
+  .backgroundDes {
+    display: none;
+  }
+  .backgroundDesRev {
+    display: none;
+  }
+  /* .mobileDes {
+    display: block;
+    margin: 1em 0em;
+  } */
+  .backgroundMobCheck {
+    display: block;
+    margin: auto;
+    width: 65%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .taglineContainer {
+    padding: 7em 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-position: initial;
+  }
+  .portfolioDetails {
+    padding:  1em 2em;
+  }
+  .firstLine {
+    font-size: 1em !important;
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
+  }
+  .secondLine {
+    font-size: 2.3em !important;
+    font-family: "Poppins",sans-serif;
+  }
+  .content {
+    font-size: 0.7em !important;
+  }
+  .backgroundDes {
+    background-image: none;
+  }
+  .backgroundDesRev {
+    background-image: none;
+  }
+  .industry {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+  }
+  .inContent {
+    font-size: 0.8em !important;
+    line-height: 2em !important;
+  }
+  .buttonDes {
+    padding: 1em 3em !important;
+    margin-top: 1em !important;
+  }
+  .buttonDiv {
+    padding: 10em 2em !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .taglineContainer {
+    padding: 7em 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-position: initial;
+  }
+  .portfolioDetails {
+    padding:  1em 2em;
+  }
+  .firstLine {
+    font-size: 1.8em !important;
+  }
+  .secondLine {
+    font-size: 2.5em !important;
+  }
+  .content {
+    font-size: 0.9em !important;
+  }
+  .backgroundDes {
+    background-image: none;
+  }
+  .backgroundDesRev {
+    background-image: none;
+  }
+  .industry {
+    font-size: 1.1em !important;
+    margin: 0.5em 0;
+  }
+  .inContent {
+    font-size: 0.8em !important;
+    line-height: 2em !important;
+  }
+  .buttonDes {
+    padding: 1em 3em !important;
+    margin-top: 1em !important;
+  }
+  .buttonDiv {
+    padding: 10em 2em !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .taglineContainer {
+    padding: 6em 3.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-position: right;
+  }
+  .content {
+    font-size: 0.8em;
+  }
 }

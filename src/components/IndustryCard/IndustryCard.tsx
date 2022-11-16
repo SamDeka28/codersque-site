@@ -6,7 +6,7 @@ const MyCard = styled(Paper)(
   ({ theme }) => css`
     background-color: white;
     width: 10rem;
-    height: 10rem;
+    aspect-ratio : 1;
     padding: 2rem;
     border-radius: 100%;
     position: relative;
@@ -17,6 +17,13 @@ const MyCard = styled(Paper)(
     align-items: center;
     justify-content: center;
     text-align: center;
+    box-shadow : 0px 4px 30px 59px rgba(204,204,204,.25);
+    z-index: 1;
+    ${theme.breakpoints.down("md")}{
+      padding : 2vw;
+      border-radius : 8px;
+      box-shadow : 0px 4px 50px 20px rgba(204,204,204,.25);
+    }
   `
 );
 
@@ -27,8 +34,8 @@ interface IProps {
 const IndustryCard: React.FC<IProps> = ({ industry }) => {
   return (
     <Box>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <MyCard elevation={3}>
+      <Box sx={{ display: "flex", justifyContent: "space-between",flexDirection: "column",alignItems : "center" }}>
+        <MyCard>
           <Box>
             <Box
               sx={{
@@ -52,6 +59,7 @@ const IndustryCard: React.FC<IProps> = ({ industry }) => {
           fontSize: "20px",
           margin: "20px 0",
           textAlign: "center",
+          fontFamily: 'Josefin Sans'
         }}
       >
         {industry.name}
