@@ -10,7 +10,7 @@ import phone from "../../assets/images/phone.svg";
 const Footer = () => {
   return (
     <Box className={styles.footer}>
-      <Box className={styles.footerTop}>
+      <Box>
         <Grid container spacing={4} rowGap={2} width="100%" padding="5vw">
           {footerLinks.map((section, index) => {
             return (
@@ -19,18 +19,20 @@ const Footer = () => {
                 xs={12}
                 sm={6}
                 md={2.4}
-                className={styles.section}
+                // className={styles.section}
               >
-                <Typography className={styles.title}>
-                  {section.title}
-                </Typography>
                 <Grid container spacing={2} direction="column">
+                  <Grid xs={12}>
+                    <Typography className={styles.title}>
+                    {section.title}
+                  </Typography>
+                </Grid>
                   {section.links.map((link, indx) => {
                     return (
                       <Grid
                         key={`link-${index}`}
                         xs={12}
-                        className={styles.section}
+                        // className={styles.section}
                       >
                         <Box display="flex">
                           {index === 4 && indx === 0 && (

@@ -1,10 +1,10 @@
 .footer {
-  width: 100%;
+  width: 100% !important;
   /* height: 400px; */
   background-color: #3a0ca3;
   color: white;
   overflow: hidden;
-  margin-top: 200px;
+  margin-top: 200px !important;
 }
 
 .section {
@@ -13,10 +13,11 @@
 }
 
 .links {
-  font-size: 12px;
-  width: 100%;
-  margin: 10px 0;
-  font-family: "Poppins", sans-serif;
+  /* font-size: 12px !important;
+  width: 100% !important;
+  margin: 10px 0 !important; */
+  font-size : 0.875em !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .explore {
@@ -28,12 +29,12 @@
 }
 
 .title {
-  padding-left: 8px;
-  font-size: 24px;
+  /* padding-left: 8px !important; */
+  font-size: 24px !important;
   color: #f72585;
-  font-weight: bold;
-  margin-bottom: 30px;
-  font-family: "Poppins", sans-serif;
+  font-weight: bold !important;
+  /* margin-bottom: 30px; */
+  font-family: "Poppins", sans-serif !important;
 }
 
 .bottomBar {
@@ -43,7 +44,7 @@
 }
 
 .bottomText {
-  font-size: 12px;
+  font-size: 12px !important;
   font-family: "Poppins", sans-serif;
 }
 
@@ -63,15 +64,11 @@
 
 @media only screen and (max-width: 600px) {
   .footerTop {
-    margin-top : 2.5rem;
-  }
-
-  .title {
-   margin-bottom: 0px;
+    margin-top : 2.5rem !important;
   }
 
   .bottomBar {
-    margin-top : 2em
+    margin-top : 2em !important;
   }
   
 }
