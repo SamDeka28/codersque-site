@@ -59,3 +59,19 @@
   align-items: center;
   justify-content: center;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .footerTop {
+    margin-top : 2.5rem;
+  }
+
+  .title {
+   margin-bottom: 0px;
+  }
+
+  .bottomBar {
+    margin-top : 2em
+  }
+  
+}

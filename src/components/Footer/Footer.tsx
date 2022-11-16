@@ -11,12 +11,14 @@ const Footer = () => {
   return (
     <Box className={styles.footer}>
       <Box className={styles.footerTop}>
-        <Grid container spacing={4} width="100%" padding="5vw">
+        <Grid container spacing={4} rowGap={2} width="100%" padding="5vw">
           {footerLinks.map((section, index) => {
             return (
               <Grid
                 key={`section-${index}`}
-                xs={2.4}
+                xs={12}
+                sm={6}
+                md={2.4}
                 className={styles.section}
               >
                 <Typography className={styles.title}>
