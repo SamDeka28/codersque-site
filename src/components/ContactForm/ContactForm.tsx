@@ -43,18 +43,17 @@ const ContactForm = () => {
         </Box>
 
         <Box className={styles.inputContainer}>
-          <select className={styles.input}>
-            <option value="volvo">Select a budget range</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
+          <input
+            className={styles.input}
+            type="number"
+            placeholder="Budget"
+          ></input>
         </Box>
 
         <Box className={styles.textAreaContainer}>
-          <textarea className={styles.textarea}></textarea>
+          <textarea style={{width : "95%", height : '88%',border : "none",background:"transparent"}} className={styles.textarea}></textarea>
         </Box>
-        <Box width="100%">
+        <Box width="100%" className={styles.contactAction}>
           <CustomButton title="Attach file" type="outlined" arrow={false}/>
         </Box>
         <Box sx={{ display: "flex" }}>
@@ -63,7 +62,7 @@ const ContactForm = () => {
             Send me acopy of NDA
           </Typography>
         </Box>
-        <Box width="100%">
+        <Box width="100%" className={styles.contactAction}>
           <CustomButton title="Submit" type="filled" arrow={false} />
         </Box>
       </Stack>
