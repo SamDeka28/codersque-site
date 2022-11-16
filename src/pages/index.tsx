@@ -240,7 +240,7 @@ const Home: NextPage = () => {
               position: "absolute",
               height: "100%",
               aspectRatio: 1,
-              top: 0,
+              top: "5%",
               transform: "rotate(-7.44deg)",
               background: "#26076C",
               right: "-10%",
@@ -252,9 +252,10 @@ const Home: NextPage = () => {
               left: "20% !important",
               maxWidth: "85% !important",
               transform: "translateX(20%)",
+              top : "15% !important"
             }}
           >
-            <Image src={flow} />
+            <Image src={flow} style={{marginTop : "15% !important"}}/>
           </div>
         </div>
       </div>
