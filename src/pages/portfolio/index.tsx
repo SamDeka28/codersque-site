@@ -23,7 +23,7 @@ const Portfolio: NextPage = () => {
         xl={12}
         className={styles.taglineContainer}
       >
-        <Typography variant='h6' className={styles.secondaryText}><div className={styles.back} />We don't just build</Typography>
+        <Typography variant='h6' className={styles.secondaryText}><div className={styles.back} />We don&apos;t just build</Typography>
         <Typography variant="h4" className={styles.secondLine}>
           We deliver <div className={styles.colorText1}>
             <div className={styles.animated}>
