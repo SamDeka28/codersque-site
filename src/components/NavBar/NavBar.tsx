@@ -13,7 +13,7 @@ import { Stack } from "@mui/material";
 import { useRouter } from "next/router";
 import {motion} from "framer-motion";
 
-export default function NavBar({navBarAlt=false,darkBg} : {navBarAlt? :boolean,darkBg : boolean}) {
+export default function NavBar({navBarAlt=false,darkBg} : {navBarAlt? :boolean,darkBg? : boolean}) {
   const router = useRouter();
   return (
     <motion.div style={{ position: "relative",zIndex:10 }} initial={{opacity : 0}} animate={{opacity :1}} transition={{duration : .5,delay:.5}}>
